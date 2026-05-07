@@ -1,0 +1,10 @@
+build/
+*.obj
+*.o
+*.a
+*.exe
+*.dll
+*.pdb
+*.ilk
+CTestTestfile.cmake
+Testing/
