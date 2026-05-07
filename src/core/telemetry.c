@@ -89,6 +89,12 @@ const char *aurora_event_type_name(enum aurora_event_type type)
         return "MEMORY_MAP";
     case AURORA_EVENT_MEMORY_REJECT:
         return "MEMORY_REJECT";
+    case AURORA_EVENT_AIL_ACCEPT:
+        return "AIL_ACCEPT";
+    case AURORA_EVENT_AIL_REJECT:
+        return "AIL_REJECT";
+    case AURORA_EVENT_POLICY_FEEDBACK:
+        return "POLICY_FEEDBACK";
     }
     return "UNKNOWN_EVENT";
 }

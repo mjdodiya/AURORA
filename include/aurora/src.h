@@ -10,7 +10,8 @@ enum aurora_src_class {
     AURORA_SRC_BACKGROUND_SYNC = 3,
     AURORA_SRC_LOW_POWER_TASK = 4,
     AURORA_SRC_SECURITY_CRITICAL = 5,
-    AURORA_SRC_CLASS_COUNT = 6
+    AURORA_SRC_BATCH_COMPUTE = 6,
+    AURORA_SRC_CLASS_COUNT = 7
 };
 
 enum aurora_memory_role {

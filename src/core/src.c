@@ -15,6 +15,8 @@ const char *aurora_src_class_name(enum aurora_src_class src_class)
         return "LOW_POWER_TASK";
     case AURORA_SRC_SECURITY_CRITICAL:
         return "SECURITY_CRITICAL";
+    case AURORA_SRC_BATCH_COMPUTE:
+        return "BATCH_COMPUTE";
     case AURORA_SRC_CLASS_COUNT:
         break;
     }
@@ -51,6 +53,8 @@ int aurora_src_class_base_boost(enum aurora_src_class src_class)
         return 20;
     case AURORA_SRC_SECURITY_CRITICAL:
         return 10;
+    case AURORA_SRC_BATCH_COMPUTE:
+        return 0;
     case AURORA_SRC_BACKGROUND_SYNC:
         return -10;
     case AURORA_SRC_LOW_POWER_TASK:
@@ -98,4 +102,3 @@ const char *aurora_status_name(enum aurora_status status)
     }
     return "UNKNOWN_STATUS";
 }
-
